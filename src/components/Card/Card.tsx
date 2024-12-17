@@ -7,7 +7,7 @@ const SyledCard = styled(MuiCard)(({ theme }) => ({
   flexDirection: 'column',
   padding: 0,
   height: '100%',
-  backgroundColor: (theme.vars || theme).palette.background.paper,
+  backgroundColor: ((theme as any).vars || theme).palette.background.paper,
   '&:hover': {
     backgroundColor: 'transparent',
     cursor: 'pointer'

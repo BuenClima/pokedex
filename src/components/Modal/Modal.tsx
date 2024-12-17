@@ -1,7 +1,7 @@
 import React from 'react'
 import { Modal, IconButton, Box } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
-import { Card, CardProps } from '../Card'
+import { Card, CardProps } from '../Card/Card'
 
 export type DetailModalProps = {
   open: boolean

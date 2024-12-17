@@ -49,31 +49,29 @@ export type CardProps = {
 
 export const Card = (props: CardProps) => {
   return (
-    <>
-      <SyledCard variant="outlined" onClick={props.onClick}>
-        <CardMedia
-          component="img"
-          alt="green iguana"
-          image={props.img}
-          sx={{
-            aspectRatio: '16 / 9',
-            borderBottom: '1px solid',
-            borderColor: 'divider'
-          }}
-        />
-        <SyledCardContent>
-          <Typography gutterBottom variant="caption" component="div">
-            {props.tag}
-          </Typography>
-          <Typography gutterBottom variant="h6" component="div">
-            {props.title}
-          </Typography>
-          <StyledTypography variant="body2" color="text.secondary" gutterBottom>
-            {props.description}
-          </StyledTypography>
-        </SyledCardContent>
-        <Author authors={props.authors} />
-      </SyledCard>
-    </>
+    <SyledCard variant="outlined" onClick={props.onClick}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        image={props.img}
+        sx={{
+          aspectRatio: '16 / 9',
+          borderBottom: '1px solid',
+          borderColor: 'divider'
+        }}
+      />
+      <SyledCardContent>
+        <Typography gutterBottom variant="caption" component="div">
+          {props.tag}
+        </Typography>
+        <Typography gutterBottom variant="h6" component="div">
+          {props.title}
+        </Typography>
+        <StyledTypography variant="body2" color="text.secondary" gutterBottom>
+          {props.description}
+        </StyledTypography>
+      </SyledCardContent>
+      <Author authors={props.authors} />
+    </SyledCard>
   )
 }

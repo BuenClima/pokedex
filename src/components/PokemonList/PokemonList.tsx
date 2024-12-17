@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import DetailModal from '../Card/components/Modal'
+import DetailModal from '../Modal/Modal'
 import { Card, CardProps } from '../Card/Card'
 import { CircularProgress, Grid2 } from '@mui/material'
 import InfiniteScroll from 'react-infinite-scroll-component'

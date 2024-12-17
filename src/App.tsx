@@ -1,14 +1,14 @@
 import { Container, CssBaseline } from '@mui/material'
 import Footer from './components/Footer/Footer'
 import AppTheme from './theme/AppTheme'
-import AppAppBar from './components/AppBar/AppBar'
+import AppBar from './components/AppBar/AppBar'
 import MainContent from './components/MainContent/MainContent'
 
 function App() {
   return (
     <AppTheme>
       <CssBaseline enableColorScheme />
-      <AppAppBar />
+      <AppBar />
       <Container
         maxWidth="lg"
         component="main"
